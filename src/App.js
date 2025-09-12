@@ -1,4 +1,5 @@
 import './App.css';
+import Main from './Components/Main';
 
 function App() {
   return (
@@ -9,6 +10,15 @@ function App() {
 
     </div>
     <h2>Awishka Isuru</h2>
+    <Main>
+      <h5>I am Awishka Isuru</h5>
+    </Main>
+    <Main />
+    <Main />
+    <Main />
+    <Main />
+    <Main />
+    <Main />
     </>
   );
 }
