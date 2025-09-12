@@ -1,21 +1,20 @@
-function Main() {
+function Main(props) {
+    const name = "Awishka Isuru";
+    const position = "developer";
     return (
         <>
         <div>This is Main Component</div>
         <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
+            <li>{name}</li>
+            <li>{position}</li>
             <li>Item 3</li>
             <li>Item 4</li>
         </ul>
+        {props.children}
         <p>Awishka Isuru</p>
         <p>Awishka Isuru</p>
         <p>Awishka Isuru</p>
-        <p>Awishka Isuru</p>
-        <p>Awishka Isuru</p>
-        <p>Awishka Isuru</p>
-        <p>Awishka Isuru</p>
-        <p>Awishka Isuru</p>
+     
         </>
     );
 }

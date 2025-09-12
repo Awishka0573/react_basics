@@ -12,6 +12,7 @@ function App() {
     <h2>Awishka Isuru</h2>
     <Main>
       <h5>I am Awishka Isuru</h5>
+      <p>I m children now</p>
     </Main>
     <Main />
     <Main />
