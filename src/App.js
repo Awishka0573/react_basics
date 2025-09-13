@@ -10,11 +10,12 @@ function App() {
 
     </div>
     <h2>Awishka Isuru</h2>
-    <Main>
+    <Main name= 'Isuru' city= 'Kegalle' position='devoloper'>
       <h5>I am Awishka Isuru</h5>
       <p>I m children now</p>
     </Main>
-    <Main />
+    <Main name= 'Ahinsa' city= 'Mathara' position='Accountant'/>
+    <Main name= 'Umayangani' city= 'galle' position='Accountant'/>
     <Main />
     <Main />
     <Main />

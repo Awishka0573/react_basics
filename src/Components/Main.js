@@ -1,15 +1,16 @@
-function Main(props) {
-    const name = "Awishka Isuru";
-    const position = "developer";
+function Main({children,name,city,position}) {
+    // const name = "Awishka Isuru";
+    // const position = "developer";
 
 
-    const myObj ={
-        name : `{name}`,
-        position : `{position}`,
-        city : `Kegalle`
-    }
+    // const myObj ={
+    //     name : `{name}`,
+    //     position : `{position}`,
+    //     city : `Kegalle`
+    // }
 
-    const {city} = myObj;
+    // console.log(props);
+    // const {city} = myObj;
     return (
         <>
         <div>This is Main Component</div>
@@ -19,7 +20,7 @@ function Main(props) {
             <li>{city}</li>
             <li>Item 4</li>
         </ul>
-        {props.children}
+        {children}
         <p>Awishka Isuru</p>
         <p>Awishka Isuru</p>
         <p>Awishka Isuru</p>
