@@ -1,4 +1,4 @@
-function Main({children,name,city,position}) {
+function Main({children,name,city,position,age}) {
     // const name = "Awishka Isuru";
     // const position = "developer";
 
@@ -18,12 +18,10 @@ function Main({children,name,city,position}) {
             <li>{name}</li>
             <li>{position}</li>
             <li>{city}</li>
-            <li>Item 4</li>
+            <li>{age}</li>
         </ul>
         {children}
-        <p>Awishka Isuru</p>
-        <p>Awishka Isuru</p>
-        <p>Awishka Isuru</p>
+     
      
         </>
     );

@@ -1,6 +1,34 @@
 import './App.css';
 import Main from './Components/Main';
 
+const myData = [
+  {
+  name : 'Awishka ',
+  position : 'developer',
+  city : 'Kegalle',
+  age : '22',
+  },
+  {
+  name : 'sandesh',
+  position : 'developer',
+  city : 'Kegalle',
+  age : '22',
+  },
+  {
+  name : 'Ahinsa ',
+  position : 'developer',
+  city : 'Mathara',
+  age : '22',
+  },
+  {
+  name : 'Isuru ',
+  position : 'developer',
+  city : 'Mathara',
+  age : '22',
+  },
+];
+
+
 function App() {
   return (
     <>
@@ -10,17 +38,12 @@ function App() {
 
     </div>
     <h2>Awishka Isuru</h2>
-    <Main name= 'Isuru' city= 'Kegalle' position='devoloper'>
-      <h5>I am Awishka Isuru</h5>
-      <p>I m children now</p>
-    </Main>
-    <Main name= 'Ahinsa' city= 'Mathara' position='Accountant'/>
-    <Main name= 'Umayangani' city= 'galle' position='Accountant'/>
-    <Main />
-    <Main />
-    <Main />
-    <Main />
-    <Main />
+    {
+      myData.map(ele=>{
+        return <Main name={ele.name} position={ele.position} city={ele.city} age={ele.age} />
+      })
+    }
+   
     </>
   );
 }
