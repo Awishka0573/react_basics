@@ -3,24 +3,28 @@ import Main from './Components/Main';
 
 const myData = [
   {
+    id:1,
   name : 'Awishka ',
   position : 'developer',
   city : 'Kegalle',
   age : '22',
   },
   {
+     id:12,
   name : 'sandesh',
   position : 'developer',
   city : 'Kegalle',
   age : '22',
   },
   {
+     id:123,
   name : 'Ahinsa ',
   position : 'developer',
   city : 'Mathara',
   age : '22',
   },
   {
+     id:1234,
   name : 'Isuru ',
   position : 'developer',
   city : 'Mathara',
@@ -39,8 +43,8 @@ function App() {
     </div>
     <h2>Awishka Isuru</h2>
     {
-      myData.map(ele=>{
-        return <Main name={ele.name} position={ele.position} city={ele.city} age={ele.age} />
+      myData.map(({name,city,position,age,id})=>{
+        return <Main key={id} name={name} position={position} city={city} age={age} />
       })
     }
    
