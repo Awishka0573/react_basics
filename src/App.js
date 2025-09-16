@@ -15,13 +15,14 @@ function App() {
     <>
     <div>
       AIK Learning React Course
-      <h1>Awishka</h1>
+      <h2>Awishka Isuru</h2>
+      <h2>2024</h2>
+      <h4>React Course ,JavaScript</h4>
 
     </div>
     <h2>Awishka Isuru</h2>
-    { myDatain 
-    }
-   
+    { myDatain }
+
     </>
   );
 }

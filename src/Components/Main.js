@@ -1,29 +1,15 @@
+import { Fragment } from "react/jsx-runtime";
+
 function Main({children,name,city,position,age}) {
-    // const name = "Awishka Isuru";
-    // const position = "developer";
-
-
-    // const myObj ={
-    //     name : `{name}`,
-    //     position : `{position}`,
-    //     city : `Kegalle`
-    // }
-
-    // console.log(props);
-    // const {city} = myObj;
     return (
-        <>
-        <div>This is Main Component</div>
-        <ul>
-            <li>{name}</li>
-            <li>{position}</li>
-            <li>{city}</li>
-            <li>{age}</li>
-        </ul>
-        {children}
-     
-     
-        </>
+        <Fragment>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUmn20vQEVdg6aMDajDFGOakhxIqBNq9L6NMM4E2mTZzF9lrLlI3dxPcUptMuaXZoxkhM&usqp=CAU" alt="cardImg" />
+        
+        <div>
+            <h3>{name}</h3>
+            <p><span>{city}</span><span>{position}</span></p>
+        </div>
+        </Fragment>
     );
 }
 
