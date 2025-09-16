@@ -12,7 +12,7 @@ const myDatain =myData.map(({name,city,position,age,id})=>{
 
 function App() {
   return (
-    <>
+    <div className="main_container">
     <div>
       AIK Learning React Course
       <h2>Awishka Isuru</h2>
@@ -21,9 +21,12 @@ function App() {
 
     </div>
     <h2>Awishka Isuru</h2>
+    <div className='myDatain_container'>
     { myDatain }
+    </div>
+    
 
-    </>
+    </div>
   );
 }
 
