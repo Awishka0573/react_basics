@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './App.css';
 import Main from './Components/Main';
 import {myData} from './Data/myData';
@@ -17,6 +18,13 @@ const myDatain =myData.map(({name,city,position,age,id,image})=>{
 
 
 function App() {
+  const [myVar,setMyVar]=useState('Awishka');
+
+  const clickHandle =() =>{
+    setMyVar('Dimuth');
+    console.log(myVar);
+  }
+
   return (
     <div className="main__container">
     <div className='header'>
@@ -26,10 +34,28 @@ function App() {
       <h4>React Course ,JavaScript</h4>
 
     </div>
-    <h2>Awishka Isuru</h2>
+    <h2>{myVar}</h2>
     <div className='mainBlock_container'>
     { myDatain }
     </div>
+    <br />
+    <br />
+    <button 
+      style= {
+      {
+        fontSize: '18px',
+        padding: '7px 12px',
+        backgroundColor: 'blue',
+        color: 'white',
+        fontWeight: 'bold',
+        borderRadius: '5px',
+        cursor:'pointer',
+      }
+    }
+    onClick={clickHandle}
+    >Click Here</button>
+
+
     
 
     </div>
