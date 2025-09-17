@@ -1,31 +1,26 @@
-.main_container{
+.main__container {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-
-.myDatain_container{
+.mainBlock_container {
   width: 90%;
   display: grid;
   grid-template-columns: repeat(4,1fr);
-  grid-template-rows: auto;
+  grid-template-rows:auto;
   gap: 20px;
-  justify-content: center;
-  align-items: center;
+ 
 }
 
-.myDatain_container img{
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 10px;
+.mainBlock_container img{
+  width:100%;
+  object-fit:contain;
+  
 }
 
-.myDatain_container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
+.mainBlock_container .mainBlock__details p{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
