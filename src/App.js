@@ -3,8 +3,21 @@ import "./App.css";
 import Main from "./Components/Main";
 import { myData } from "./Data/myData";
 
-const myDatain = myData.map(({ name, city, position, age, id, image }) => {
-  return (
+
+
+function App() {
+  const [myVar, setMyVar] = useState({
+    name : 'Awishka ',
+    position : 'developer',
+    city : 'Kegalle',
+
+    
+  });
+
+  const[myDataState,setMyDataState] = useState(myData);
+
+  const myDatain = myDataState.map(({ name, city, position, age, id, image }) => (
+  
     <Main
       key={id}
       name={name}
@@ -13,16 +26,8 @@ const myDatain = myData.map(({ name, city, position, age, id, image }) => {
       age={age}
       image={image}
     />
-  );
-});
-
-function App() {
-  const [myVar, setMyVar] = useState({
-    name : 'Awishka ',
-    position : 'developer',
-    city : 'Kegalle',
-
-  });
+ 
+));
 
   const clickHandle = () => {
     setMyVar({
@@ -31,6 +36,22 @@ function App() {
       position : 'developer',
       city : 'Kandy',
     }); 
+ 
+
+  console.log(myDataState);
+
+
+  setMyDataState([
+    ...myDataState, 
+    {
+      id:1234567,
+      name : 'Praveen ', 
+      position : 'ui/ux designer', 
+      city : 'Kandy', 
+      age : '25', 
+      image : 'https://img.lovepik.com/png/20231125/man-avatar-image-for-profile-businessman-father-grandfather_693685_wh1200.png',
+    },
+  ]);
   };
 
   return (
