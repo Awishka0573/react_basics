@@ -1,6 +1,6 @@
 const myData = [
   {
-    id:1,
+  id:1,
   name : 'Awishka ',
   position : 'developer',
   city : 'Kegalle',
